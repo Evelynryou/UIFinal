@@ -1,8 +1,7 @@
 import sys
 import openai
 
-openai.api_key = "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"  # your API key
-
+openai.api_key = "your_openai_api_key"
 if not openai.api_key:
     print("Please specify the OPENAI API KEY.", file=sys.stderr)
     sys.exit(1)
