@@ -1,0 +1,12 @@
+{% extends "chat/base.html" %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="alert alert-warning">
+            &lt;{{ object.situation }}&gt;
+            Are you sure you want to delete this?
+        </div>
+        <input type="submit" class="btn btn-danger" value="I will delete it." />
+    </form>
+{% endblock %}
